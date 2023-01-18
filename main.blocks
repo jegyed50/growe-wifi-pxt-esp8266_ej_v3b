@@ -1,37 +1,37 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><comment id="}3;#E}aUpV^JfDgzAA$]" data="1" x="77" y="-357" h="120" w="480">https://www.cytron.io/p-grove-wifi-8266-iot-for-microbit-and-beyond</comment><comment id="x|k67S5rwvgX)hHx.P[`" data="0" x="52" y="-250" h="120" w="480">https://github.com/cytrontechnologies/pxt-esp8266</comment><block type="device_button_event" id="LC}ME$@)Cw4!a{R{ifd#" x="10" y="10"><field name="NAME">Button.A</field><comment pinned="false" h="80" w="160">https://github.com/jegyed50/Growe-WiFi-pxt-esp8266_EJ</comment><data>0;1</data><statement name="HANDLER"><block type="esp8266_init" id="#!TO;:_rv4I|SG`85CPo"><field name="tx">SerialPin.P8</field><field name="rx">SerialPin.P12</field><field name="baudrate">BaudRate.BaudRate115200</field><next><block type="controls_if" id="V`XrzLmAeIv53t%LJ4t$"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="esp8266_is_esp8266_initialized" id="rsN0-^lQ_~1Wz2}!eBYO"></block></value><statement name="DO0"><block type="device_show_leds" id="Tf-82#{g*$9jKIcK`Fr*"><field name="LEDS">`
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="]XH8|**Hy$~QRSb]|lSJ" x="0" y="0"><statement name="HANDLER"><block type="radio_set_group" id="0JFvQM-A?h?vLKl)k+b="><value name="ID"><shadow type="math_number_minmax" id="4s6@)6+Z^HWL7NU$IK|M"><mutation min="0" max="255" label="Number" precision="0"></mutation><field name="SLIDER">1</field></shadow></value><next><block type="device_show_leds" id="fzX,K4BTalV0WcZjon)2"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . #
+        `</field><comment pinned="false" h="80" w="160">https://github.com/cytrontechnologies/pxt-esp8266</comment><next><block type="device_set_brightness" id="8Jzz$W^-0_[-CYXa~dI?"><value name="value"><shadow type="math_number_minmax" id="mtuJVo3i5u5eoG`HhQ]c"><mutation min="0" max="255" label="Number" precision="0"></mutation><field name="SLIDER">15</field></shadow></value><next><block type="radio_datagram_send_string" id="jr1I#tZ`.hDuut8Ls0cp"><value name="msg"><shadow type="text" id="QknBY`3}RBex-8]l^woZ"><field name="TEXT">start</field></shadow></value></block></next></block></next></block></next></block></statement></block><block type="device_button_event" id="Cnx-6:acf:C0?Xr[KsN}" x="715" y="355"><field name="NAME">Button.B</field><comment pinned="false" h="80" w="160">https://www.cytron.io/p-grove-wifi-8266-iot-for-microbit-and-beyond</comment><statement name="HANDLER"><block type="esp8266_upload_thingspeak" id="oPrThl4ER*{S1noad$A#"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="writeApiKey"><shadow type="text" id="ev^y,x/ha0!cB(k[^6_8"><field name="TEXT">ICPZTSAEIMBWJDTK</field></shadow></value><value name="field1"><shadow type="math_number" id="*Hu(G[i]oJ0Fkm-MmyZ^"><field name="NUM">77</field></shadow></value></block></statement></block><block type="device_button_event" id="G)-nAnz7@6v[{!i5/_Eb" x="18" y="484"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="esp8266_init" id="F078?j1XIR|l!j3T9$;1"><field name="tx">SerialPin.P8</field><field name="rx">SerialPin.P12</field><field name="baudrate">BaudRate.BaudRate115200</field><next><block type="device_show_leds" id="oRYtu]bg^dF0vm,1gJYi"><field name="LEDS">`
         # . . . . 
         . . . . . 
         . . . . . 
         . . . . . 
         . . . . .
-        `</field><next><block type="esp8266_connect_wifi" id="W2sM%[B~8x=:U*S,l_D6"><value name="ssid"><shadow type="text" id="hi:vKk7$dZ7|/w~mqDVC"><field name="TEXT">ARRIS-02D9</field></shadow></value><value name="password"><shadow type="text" id="}6fp}8HL%{lSZGJ{goHr"><field name="TEXT">01C2BBC549B74403</field></shadow></value><next><block type="controls_if" id="JoU_@M*?=~8].[6FDFYb"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="esp8266_is_wifi_connected" id="PFS`50`}JQ79aa2S%FW?"></block></value><statement name="DO0"><block type="device_show_leds" id="|Qj^okI7vsIv=F2!05d@"><field name="LEDS">`
+        `</field><next><block type="esp8266_connect_wifi" id="{jbQB@uzMrgH8@?5c[nG"><value name="ssid"><shadow type="text" id="sBv%mn^XQguBPW%2#H*2"><field name="TEXT">ARRIS-02D9</field></shadow></value><value name="password"><shadow type="text" id="`4s%~!MCeu+pRDBXC,I~"><field name="TEXT">01C2BBC549B74403</field></shadow></value><next><block type="device_show_leds" id="^qfB}FW+5ypj3XBKQpsm"><field name="LEDS">`
         . # . . . 
         . . . . . 
         . . . . . 
         . . . . . 
         . . . . .
-        `</field><next><block type="controls_if" id="85)SZm[jb}JN=W?6u{Xx"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean" id="yWe?k2l:Aod*OMn%7GvS"><field name="BOOL">TRUE</field></shadow></value><statement name="DO0"><block type="device_show_leds" id="ax/ZKg;,eDB~dJNDQmF/"><field name="LEDS">`
+        `</field><next><block type="esp8266_connect_APEX_LOCAL" id="Sr8|Vie9R`MSq(#eg06w"><value name="APEX_SERVER_NAME_IP"><shadow type="text" id="uc^_hV_LF1w#hThv{6f{"><field name="TEXT"></field></shadow></value><value name="APEX_SERVER_PORT"><shadow type="text" id="|S/Nr.[DU[h2rMc}eq`^"><field name="TEXT"></field></shadow></value><next><block type="controls_if" id="#G)N52f^sD?E_:bHikm^"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="esp8266_is_APEX_local_server_connected" id="nLQJJ8-G*Q$Xd1(8b-Z7"></block></value><statement name="DO0"><block type="device_show_leds" id="otYT*#:Ji:k%f0a;4s~("><field name="LEDS">`
         . . # . . 
         . . . . . 
         . . . . . 
         . . . . . 
         . . . . .
-        `</field><next><block type="esp8266_upload_APEX_LOCAL" id="LY77}N_:qKKC6MR.]v1@"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="APEX_SERVER_NAME_IP"><shadow type="text" id="dx4Q]_FlRA0pvZ2k1o1c"><field name="TEXT"></field></shadow></value><value name="APEX_SERVER_PORT"><shadow type="text" id="L!6G$rj{us49m{x~E8Y="><field name="TEXT"></field></shadow></value><value name="WITHOUT_PARAMETERS"><shadow type="text" id="2qbaT^3VY4p%]/VU|zeP"><field name="TEXT"></field></shadow></value><value name="PARAMETER_PREFIX"><shadow type="text" id="1bR}~R7XIv4wYA,^vYd="><field name="TEXT"></field></shadow></value><value name="field1"><shadow type="math_number" id="nS^hzNSaiOcgG^^mIF.%"><field name="NUM">0</field></shadow></value><value name="field2"><shadow type="math_number" id="N0SrZ^NIf7a=v|J23zR~"><field name="NUM">0</field></shadow></value><value name="field3"><shadow type="math_number" id="x.6J%]y6?h55B3`Fs5LX"><field name="NUM">0</field></shadow></value><value name="field4"><shadow type="math_number" id="DcYv[f,|#`Jo]_ldh3I."><field name="NUM">0</field></shadow></value><value name="field5"><shadow type="math_number" id="2$5LtJ9.,*g5#/SWLaPX"><field name="NUM">0</field></shadow></value><value name="field6"><shadow type="math_number" id="EEC,:NFJjSb}2ZFob9$F"><field name="NUM">0</field></shadow></value><value name="field7"><shadow type="math_number" id="z#a9+05Censkf1!NZCd["><field name="NUM">0</field></shadow></value><value name="field8"><shadow type="math_number" id="ja5/?Q:i(GP%x^CJ(F$/"><field name="NUM">0</field></shadow></value></block></next></block></statement><statement name="ELSE"><block type="device_show_leds" id="6+w5@]/zmg=fTBmYuMV)"><field name="LEDS">`
+        `</field><next><block type="device_show_leds" id="=mu;5n@_HM[hYKG5%GWU"><field name="LEDS">`
+        . . # # . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="esp8266_upload_APEX_LOCAL" id="_wrE;la8sX~Jib+x10=:"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="APEX_SERVER_NAME_IP"><shadow type="text" id="u-Vv%wy_1@zv/Wb4GrKl"><field name="TEXT"></field></shadow></value><value name="APEX_SERVER_PORT"><shadow type="text" id="`in)0bo5gXuLDCTNRqGN"><field name="TEXT"></field></shadow></value><value name="WITHOUT_PARAMETERS"><shadow type="text" id="}rghxRLelt~iflKwhM|n"><field name="TEXT"></field></shadow></value><value name="PARAMETER_PREFIX"><shadow type="text" id="ngF)naFkEIs_as5gbCxo"><field name="TEXT"></field></shadow></value><value name="field1"><shadow type="math_number" id="Ru*7I]aphki:,@N|(R1R"><field name="NUM">0</field></shadow></value></block></next></block></next></block></statement><statement name="ELSE"><block type="device_show_leds" id="8z+2b)xCNTP+z)ijeOSo"><field name="LEDS">`
         . . . . . 
         . . . . . 
         . . . . . 
         . . . . . 
         . . # . .
-        `</field></block></statement></block></next></block></statement><statement name="ELSE"><block type="device_show_leds" id="yG:HJ!anScy7}kI83+43"><field name="LEDS">`
-        . . . . . 
-        . . . . . 
-        . . . . . 
-        . . . . . 
-        . # . . .
-        `</field></block></statement></block></next></block></next></block></statement><statement name="ELSE"><block type="device_show_leds" id="Cr?-GkH`rM,54yp{RZ3x"><field name="LEDS">`
-        . . . . . 
-        . . . . . 
-        . . . . . 
-        . . . . . 
-        # . . . .
-        `</field></block></statement></block></next></block></statement></block></xml>
+        `</field></block></statement></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>

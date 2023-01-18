@@ -5,7 +5,7 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "pxt-esp8266 APEX": "github:jegyed50/Growe-WiFi-pxt-esp8266_EJ_v3#7e0af69e12cfbb12d242a3a3d50c9e1b0fd9e084"
+        "pxt-esp8266 APEX": "github:jegyed50/Growe-WiFi-pxt-esp8266_EJ_v3#ffdf74330ac8da8e479cd181f04bc4887340186b"
     },
     "files": [
         "main.blocks",
