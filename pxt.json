@@ -1,0 +1,26 @@
+{
+    "name": "Growe-WiFi-pxt-esp8266_EJ_v3B",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "microphone": "*",
+        "pxt-esp8266 APEX": "github:jegyed50/Growe-WiFi-pxt-esp8266_EJ_v3#7e0af69e12cfbb12d242a3a3d50c9e1b0fd9e084"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "5.0.12",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
+}
